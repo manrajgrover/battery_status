@@ -25,3 +25,7 @@ def set_limit(x):
         setBatteryLowLimit = x
     else:
         print 'Please enter an integer between 0 and 100'
+
+def check_status():
+    battery = wmi.WMI().Win32_Battery()[0]
+    print 'Your current battery status is ' + str(battery.EstimatedChargeRemaining)'%'
