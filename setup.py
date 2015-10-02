@@ -1,9 +1,9 @@
 from setuptools import setup
 
 setup(name='battery_status',
-      version='0.0.1',
+      version='0.0.8',
       description='Battery Status Notifier',
-      long_description='Check your battery status, add a notifier, set notification percentage on Windows',
+      long_description='Check your battery status and add a notifier on Windows',
       keywords='battery status notifier windows check battery status python',
       url='https://github.com/ManrajGrover/battery_status',
       author='Manraj Singh',
@@ -12,7 +12,5 @@ setup(name='battery_status',
       packages=['battery_status'],
       install_requires=[
             'wmi',
-            'time',
-            'winsound'
       ],
       zip_safe=False)
